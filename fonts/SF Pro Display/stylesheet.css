@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "SF Pro Display";
+  /* src: url("SFProDisplay-Heavy.eot"); */
+  src: local("SF Pro Display Heavy"), local("SFProDisplay-Heavy"),
+    /* url("SFProDisplay-Heavy.eot?#iefix") format("embedded-opentype"), */
+      url("SFProDisplay-Heavy.woff2") format("woff2"),
+    url("SFProDisplay-Heavy.woff") format("woff"),
+    url("SFProDisplay-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}

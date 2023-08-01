@@ -1,32 +1,35 @@
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
 /*
 Document
 ========
 */
+
 /**
 Use a better box model (opinionated).
 */
+
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.15; /* 1. Correct the line height in all browsers. */
   -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
   -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
-  -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
 Sections
 ========
 */
+
 body {
   margin: 0; /* Remove the margin in all browsers. */
 }
@@ -35,10 +38,12 @@ body {
 Grouping content
 ================
 */
+
 /**
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
+
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
@@ -48,17 +53,19 @@ hr {
 Text-level semantics
 ====================
 */
+
 /**
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
+
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
 Add the correct font weight in Edge and Safari.
 */
+
 b,
 strong {
   font-weight: bolder;
@@ -68,17 +75,20 @@ strong {
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
 */
+
 code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
 /**
 Add the correct font size in all browsers.
 */
+
 small {
   font-size: 80%;
 }
@@ -86,6 +96,7 @@ small {
 /**
 Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 */
+
 sub,
 sup {
   font-size: 75%;
@@ -106,10 +117,12 @@ sup {
 Tabular data
 ============
 */
+
 /**
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
+
 table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
@@ -119,10 +132,12 @@ table {
 Forms
 =====
 */
+
 /**
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 */
+
 button,
 input,
 optgroup,
@@ -137,6 +152,7 @@ textarea {
 /**
 Remove the inheritance of text transform in Edge and Firefox.
 */
+
 button,
 select {
   text-transform: none;
@@ -145,16 +161,18 @@ select {
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
+
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
 /**
 Remove the inner border and padding in Firefox.
 */
+
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
@@ -163,6 +181,7 @@ Remove the inner border and padding in Firefox.
 /**
 Restore the focus styles unset by the previous rule.
 */
+
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -171,6 +190,7 @@ Restore the focus styles unset by the previous rule.
 Remove the additional ':invalid' styles in Firefox.
 See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
 */
+
 :-moz-ui-invalid {
   box-shadow: none;
 }
@@ -178,6 +198,7 @@ See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d4
 /**
 Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
 */
+
 legend {
   padding: 0;
 }
@@ -185,6 +206,7 @@ legend {
 /**
 Add the correct vertical alignment in Chrome and Firefox.
 */
+
 progress {
   vertical-align: baseline;
 }
@@ -192,6 +214,7 @@ progress {
 /**
 Correct the cursor style of increment and decrement buttons in Safari.
 */
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
@@ -201,7 +224,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -209,6 +233,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -217,6 +242,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to 'inherit' in Safari.
 */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
@@ -226,95 +252,11 @@ Remove the inner padding in Chrome and Safari on macOS.
 Interactive
 ===========
 */
+
 /*
 Add the correct display in Chrome and Safari.
 */
+
 summary {
   display: list-item;
 }
-
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: #000000;
-}
-
-img {
-  display: block;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.logo {
-  display: inline-block;
-  padding: 30px 0 30px 0;
-}
-
-.logo__image {
-  width: 70px;
-  height: 44px;
-}
-
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-}
-
-.navigation__item {
-  margin-right: 60px;
-}
-.navigation__item:last-child {
-  margin-right: 0;
-}
-
-.navigation__item--current {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-}
-
-.navigation__link {
-  color: #333333;
-  font-family: TT Hoves;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */

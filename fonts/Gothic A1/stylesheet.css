@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Gothic A1";
+  /* src: url("GothicA1-Regular.eot"); */
+  src: local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    /* url("GothicA1-Regular.eot?#iefix") format("embedded-opentype"), */
+      url("GothicA1-Regular.woff2") format("woff2"),
+    url("GothicA1-Regular.woff") format("woff"),
+    url("GothicA1-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
