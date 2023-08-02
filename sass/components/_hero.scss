@@ -1,0 +1,37 @@
+.hero__container {
+  display: flex;
+
+  margin-bottom: 120px;
+}
+
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__content-box {
+  position: relative;
+
+  width: 770px;
+  height: 829px;
+}
+
+.hero__title {
+  margin-bottom: 90px;
+}
+
+.hero__titel--black {
+  color: #333333;
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.hero__button-box {
+  position: absolute;
+
+  bottom: 0;
+}

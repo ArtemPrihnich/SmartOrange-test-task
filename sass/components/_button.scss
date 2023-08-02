@@ -1,0 +1,61 @@
+.button {
+  padding: 24px 50px;
+
+  font-family: TT Hoves;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.button::after {
+  content: "";
+
+  display: inline-block;
+  margin-left: 12px;
+
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url(../../images/ArrowRight.svg) no-repeat 50% 50%;
+  mask: url(../../images/ArrowRight.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.button--light {
+  color: #333333;
+
+  background-color: #ffffff;
+
+  &.button::after {
+    background-color: #333333;
+  }
+}
+
+.button--dark {
+  color: #ffffff;
+
+  background-color: #333333;
+
+  &.button::after {
+    background-color: #ffffff;
+  }
+}
+
+.button--light.button:hover {
+  color: #ffffff;
+  background-color: #333333;
+  &.button::after {
+    background-color: #ffffff;
+  }
+}
+
+.button--dark.button:hover {
+  color: #333333;
+  background-color: #ffffff;
+  &.button::after {
+    background-color: #333333;
+  }
+}

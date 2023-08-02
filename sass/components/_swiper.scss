@@ -1,0 +1,37 @@
+.swiper__control {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.swiper__button {
+  display: block;
+  padding: 14px;
+
+  border: 1px solid #f2f2f2;
+  background: #f9f9f9;
+
+  &:first-child {
+    margin-right: 22px;
+  }
+}
+
+.swiper__counter {
+  display: flex;
+  align-items: center;
+}
+
+.swiper__value {
+  color: #bdbdbd;
+  font-family: TT Hoves;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.swiper__element {
+  width: 31px;
+  height: 31px;
+
+  margin: 0 15px;
+}

@@ -1,0 +1,30 @@
+.projects__container {
+  padding-bottom: 120px;
+}
+
+.projects__title {
+  margin-bottom: 60px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.projects__item {
+  margin-right: 30px;
+
+  &:nth-child(3n + 2) {
+    margin-right: 0;
+  }
+
+  &:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+.projects__button {
+  margin-left: auto;
+}

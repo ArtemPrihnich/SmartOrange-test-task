@@ -1,0 +1,83 @@
+.form {
+  margin-right: 30px;
+}
+
+.form__box {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.form__box--textarea {
+  margin-bottom: 22px;
+}
+
+.form__input {
+  position: relative;
+  width: 100%;
+
+  padding: 14px 20px 14px 20px;
+
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+
+  color: #333333;
+  background-color: #f3f3f3;
+
+  border: none;
+  outline: none;
+}
+
+.form__input:focus + .form__label {
+  display: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+
+  color: #8d8d8d;
+}
+
+.form__required {
+  color: #c30000;
+}
+
+.form__textarea {
+  height: 146px;
+  width: 390px;
+
+  resize: none;
+}
+
+.form__notification {
+  display: block;
+  margin: 0 20px 22px auto;
+
+  width: 330px;
+
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+
+  color: #333333;
+}
+
+.hidden {
+  display: none;
+}
