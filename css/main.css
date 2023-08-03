@@ -511,6 +511,11 @@ button {
   margin: 0 25px;
 }
 
+.swiper__element-icon {
+  width: 31px;
+  height: 31px;
+}
+
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
