@@ -13,6 +13,13 @@
   &:first-child {
     margin-right: 22px;
   }
+
+  transition: background-color 250ms linear;
+}
+
+.swiper__button:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
 }
 
 .swiper__counter {
@@ -33,5 +40,5 @@
   width: 31px;
   height: 31px;
 
-  margin: 0 15px;
+  margin: 0 25px;
 }

@@ -1,0 +1,44 @@
+.address__box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.address__box--location {
+  align-items: start;
+}
+
+.address__text {
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+
+  color: #ffffff;
+}
+
+.address__text--location {
+  margin-left: 19px;
+}
+
+.address__text--phone,
+.address__text--email {
+  margin-left: 14px;
+}
+
+.address__location-icon {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.address__email-icon {
+  margin-left: -8px;
+  margin-right: -6px;
+}

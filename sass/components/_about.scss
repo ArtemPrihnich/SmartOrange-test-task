@@ -1,8 +1,6 @@
 .about__container {
   display: flex;
   position: relative;
-
-  margin-bottom: 120px;
 }
 
 .about__background {
@@ -16,7 +14,7 @@
   z-index: -1;
 }
 
-.about__info-box {
+.about__info {
   margin: 30px 70px 0 30px;
 }
 

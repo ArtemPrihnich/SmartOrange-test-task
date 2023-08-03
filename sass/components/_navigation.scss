@@ -6,7 +6,7 @@
 }
 
 .navigation__item {
-  margin-right: 60px;
+  margin-right: 58px;
 
   &:last-child {
     margin-right: 0;
@@ -14,14 +14,13 @@
 }
 
 .navigation__item--current {
-  padding-top: 4px;
-  padding-bottom: 4px;
-
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
 }
 
 .navigation__link {
+  padding: 4px;
+
   color: #333333;
   font-family: TT Hoves;
   font-size: 12px;
@@ -30,4 +29,10 @@
   line-height: 12px;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+
+  transition: color 250ms linear;
+}
+
+.navigation__link:hover {
+  color: #bdbdbd;
 }

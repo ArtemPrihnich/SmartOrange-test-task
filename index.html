@@ -21,12 +21,13 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="header">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__box">
           <div class="logo">
-            <img class="logo__image" src="./images/Logo.svg" alt="Логотип" />
+            <img class="logo__image" src="./images/LogoBlack.svg" alt="Логотип" />
           </div>
           <nav>
             <ul class="navigation">
@@ -57,7 +58,10 @@
           <div class="hero__container">
             <div class="hero__box">
               <h1 class="hero__title title">
-                PROJECT <span class="hero__title hero__title--black">HOME</span>
+                PROJECT
+                <span class="hero__title hero__title--black">
+                  HOME
+                </span>
               </h1>
               <div class="swiper">
                 <div class="swiper__control">
@@ -76,7 +80,7 @@
                   <p class="swiper__value">01</p>
                   <div class="swiper__element">
                     <img
-                      src="./images/line.svg"
+                      src="./images/Line.svg"
                       alt=""
                       width="31px"
                       height="31px"
@@ -89,7 +93,7 @@
             <div class="hero__content-box">
               <img src="./images/HeroImg.jpg" alt="Изображение секции Герой" />
               <div class="hero__button-box">
-                <button class="button button--light">Взглянуть</button>
+                <a href="/" class="button button--light button--link">Взглянуть</a>
               </div>
             </div>
           </div>
@@ -111,7 +115,7 @@
                 <img src="./images/AboutImg3.jpg" alt="" />
               </li>
             </ul>
-            <div class="about__info-box">
+            <div class="about__info">
               <h2 class="about__title title">О компании</h2>
               <p class="about__text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -121,14 +125,14 @@
                 survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
-              <button class="button button--light">Читать</button>
+              <a href="/" class="button button--light button--link">Читать</a>
             </div>
           </div>
         </div>
       </section>
 
       <section class="tasks">
-        <div class="tasks__container container">
+        <div class="container">
           <h2 class="tasks__title title">Основные задачи</h2>
           <ul class="tasks__list">
             <li class="tasks__item">
@@ -151,55 +155,87 @@
       </section>
 
       <section class="projects">
-        <div class="projects__container container">
+        <div class="container">
           <h2 class="projects__title title">Наши проекты</h2>
           <ul class="projects__list">
             <li class="projects__item">
+              <div class="projects__overlay">
+                <div class="projects__overlay-box">
+                  <p class="projects__overlay-text">Досуговый центр</p>
+                  <a href="/" class="projects__overlay-button button button--dark button--link">Подробнее</a>
+                </div>
+              </div>
               <img src="./images/ProjectsImg1.jpg" alt="" />
             </li>
             <li class="projects__item">
+              <div class="projects__overlay">
+                <div class="projects__overlay-box">
+                  <p class="projects__overlay-text">Музей</p>
+                  <a href="/" class="projects__overlay-button button button--dark button--link">Подробнее</a>
+                </div>
+              </div>
               <img src="./images/ProjectsImg2.jpg" alt="" />
             </li>
             <li class="projects__item">
+              <div class="projects__overlay">
+                <div class="projects__overlay-box">
+                  <p class="projects__overlay-text project__overlay-text--small">Бассейн</p>
+                  <a href="/" class="projects__overlay-button button button--dark button--link">Подробнее</a>
+                </div>
+              </div>
               <img src="./images/ProjectsImg3.jpg" alt="" />
             </li>
             <li class="projects__item">
+              <div class="projects__overlay">
+                <div class="projects__overlay-box">
+                  <p class="projects__overlay-text">Жилой Комплекс</p>
+                  <a href="/" class="projects__overlay-button button button--dark button--link">Подробнее</a>
+                </div>
+              </div>
               <img src="./images/ProjectsImg4.jpg" alt="" />
             </li>
             <li class="projects__item">
+              <div class="projects__overlay">
+                <div class="projects__overlay-box">
+                  <p class="projects__overlay-text project__overlay-text--small">Фонтан</p>
+                  <a href="/" class="projects__overlay-button button button--dark button--link">Подробнее</a>
+                </div>
+              </div>
               <img src="./images/ProjectsImg5.jpg" alt="" />
             </li>
           </ul>
-          <button class="projects__button button button--dark">
-            Все продукты
-          </button>
+          <div class="projects__button">
+            <a href="/" class="button button--dark button--link ">
+              Все продукты
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="communication">
-        <div class="container">
+        <div class="communication__container container">
           <h2 class="communication__title title">Связаться с нами</h2>
-            <div class="communication__container">
-              <form class="form" action="/">
+            <div class="communication__box">
+              <form class="form" action="/" autocomplete="off">
                 <div class="form__box">
                   <input class="form__input" id="name" type="text" required />
-                  <label for="name" class="form__label">Имя</label>
+                  <label class="form__label" for="name">Имя</label>
                 </div>
                 <div class="form__box">
                   <input class="form__input" id="phone" required type="text" />
-                  <label for="phone" class="form__label"
+                  <label class="form__label" for="phone"
                     >Номер телефона<span class="form__required">*</span></label
                   >
                 </div>
                 <div class="form__box">
                   <input class="form__input" id="email" required type="text" />
-                  <label for="email" class="form__label"
+                  <label class="form__label" for="email"
                     >E-mail<span class="form__required">*</span></label
                   >
                 </div>
                 <div class="form__box form__box--textarea">
                   <input class="form__input" id="product" type="text" />
-                  <label for="product" class="form__label">Интересующий товар/услуга</label>
+                  <label class="form__label" for="product">Интересующий товар/услуга</label>
                 </div>
                 <div class="form__box">
                   <textarea class="form__input form__textarea" required id="message"></textarea>
@@ -208,7 +244,7 @@
                 <p class="form__notification">
                   Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
                 </p>
-                <button class="button button--dark">Отправить</button>
+                <button class="button button--dark" type="submit">Отправить</button>
               </form>
               <img class="communication__image" src="./images/CommunicationImg.jpg" alt="" />
             </div>
@@ -217,66 +253,100 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="logo"></div>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__box">
+          <div class="logo">
+            <img src="./images/LogoWhite.svg" alt="Логотип">
+          </div>
           <div class="footer__information">
             <h3 class="footer__title">Информация</h3>
             <ul class="information">
               <li class="information__item">
-                <a class="information__link" href="/"></a>
+                <a class="information__link" href="/">Главная</a>
               </li>
               <li class="information__item">
-                <a class="information__link" href="/"></a>
+                <a class="information__link" href="/">Галерея</a>
               </li>
               <li class="information__item">
-                <a class="information__link" href="/"></a>
+                <a class="information__link" href="/">Проекты</a>
               </li>
               <li class="information__item">
-                <a class="information__link" href="/"></a>
+                <a class="information__link" href="/">Сертификаты</a>
               </li>
               <li class="information__item">
-                <a class="information__link" href="/"></a>
+                <a class="information__link" href="/">Контакты</a>
               </li>
             </ul>
           </div>
           <div class="footer__address">
             <h3 class="footer__title">Контакты</h3>
             <address class="address">
-              <p class="address__location">
-                100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
-              </p>
-              <a class="address__phone" href="tel:+380000000000"
-                >+38 (000) 000 00 00</a
-              >
-              <a class="address__email" href="mailto:mail@gmail.com"
-                >mail@gmail.com</a
-              >
+              <div class="address__box address__box--location">
+                <svg class="address__location-icon" width="22px" height="24px">
+                  <use href="./images/symbol-defs.svg#MapPin"></use>
+                </svg>
+                <p class="address__text address__text--location">
+                  100000, Республика Казахстан, <br> г. Караганда, ул. Телевизионная 10
+                </p>
+              </div>
+              <div class="address__box">
+                <svg width="16px" height="16px">
+                  <use href="./images/symbol-defs.svg#Phone"></use>
+                </svg>
+                <a class="address__text address__text--phone" href="tel:+380000000000"
+                >+38 (000) 000 00 00</a>
+              </div>
+              <div class="address__box">
+                <svg class="address__email-icon" width="30px" height="18px">
+                  <use href="./images/symbol-defs.svg#Email"></use>
+                </svg>
+                <a class="address__text address__text--email" href="mailto:mail@gmail.com"
+                >mail@gmail.com</a>
+              </div>
             </address>
           </div>
           <div class="footer__social">
             <h3 class="footer__title">Социальные сети</h3>
-            <ul>
-              <li>
-                <a href="/"></a>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="/">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#Facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="/"></a>
+              <li class="social__item">
+                <a class="social__link" href="/">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#Twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="/"></a>
+              <li class="social__item">
+                <a class="social__link" href="/">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#LinkedIn"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="/"></a>
+              <li class="social__item">
+                <a class="social__link" href="/">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#Pinterest"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">© 2019 Digital Project. Все права защищены.</p>
+      </div>
     </footer>
 
-    <script src="./js/form.js"></script>
+    <script src="./js/form.js" type="module"></script>
 
   </body>
 </html>

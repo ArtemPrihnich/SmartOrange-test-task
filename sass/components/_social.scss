@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+
+  padding: 10px;
+
+  border-radius: 50%;
+
+  transition: background-color, 250ms linear;
+}
+
+.social__link:hover {
+  background-color: #ffffff;
+}
+
+.social__link:hover .social__icon {
+  fill: #2c2c2c;
+}
+
+.social__icon {
+  fill: #ffffff;
+
+  transition: fill, 250ms linear;
+}
