@@ -509,11 +509,7 @@ button {
   width: 31px;
   height: 31px;
   margin: 0 25px;
-}
-
-.swiper__element-icon {
-  width: 31px;
-  height: 31px;
+  background-image: url("../images/Line.svg");
 }
 
 .about__container {
